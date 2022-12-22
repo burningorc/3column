@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+}
+main {
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.sedan, .suv, .luxury{
+    max-width: 30rem;
+    padding: 3.2rem;
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 1.2rem 1.2rem;
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: 2.9rem;
+}
+p {
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 2.5rem;
+    font-weight: 400;
+}
+button {
+    font-family: 'Big Shoulders Display', cursive;
+    border: none; 
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 2.5rem;
+    border-radius: 3rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+.suv button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 700px) {
+    body {
+        min-height: 100vh;
+        display: flex; 
+        align-items: center;
+        justify-content: center;     
+    }
+    main {
+        display: flex;
+        margin: 0 auto;
+    }
+    .sedan, .suv, .luxury {
+        padding: 4rem;
+    }
+    .sedan {
+        border-radius: 1.2rem 0 0 1.2rem;
+    }
+    .luxury {
+        border-radius: 0 1.2rem 1.2rem 0;
+    }
+    button {
+        margin-top: 9rem;
+    }
+}
